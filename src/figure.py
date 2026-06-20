@@ -7,6 +7,8 @@ from abc import ABC, abstractmethod
 
 class Figure(ABC):
     """Вычисляем площадь и периметр фигуры"""
+    def __init__(self, name: str):
+        self.name = name
 
     @abstractmethod
     def get_perimeter(self) -> float:
